@@ -1,0 +1,348 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Growers DAO
+ * @author      - 
+ * @created_by  - Muhammad Mahdiul Islam
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Inter&display=swap');
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('../fonts/MADETommySoft-Light.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Light.woff') format('woff'),
+        url('../fonts/MADETommySoft-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('../fonts/MADETommySoft-Bold.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Bold.woff') format('woff'),
+        url('../fonts/MADETommySoft-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('../fonts/MADETommySoft-Medium.woff2') format('woff2'),
+        url('../fonts/MADETommySoft-Medium.woff') format('woff'),
+        url('../fonts/MADETommySoft-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('../fonts/MADETommySoft.woff2') format('woff2'),
+        url('../fonts/MADETommySoft.woff') format('woff'),
+        url('../fonts/MADETommySoft.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* fonts import -END */
+.ff-inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ff-allison {
+    font-family: "Allison", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.ff-tommy {
+    font-family: 'MADE Tommy Soft';
+}
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+span {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+:root {
+    --primary: #8EE032;
+    --primary-dark: #95FF1F;
+    --secondary: #FFA620;
+    --white: #fff;
+    --dark-1: #142625;
+    --dark-5: #CED9D7;
+    --dark-6: #E6EEED;
+    --dark-7: #F9F9F9;
+}
+
+/* reset, root - END */
+
+// container resize
+.container {
+    @media (min-width: 1090px) {
+        max-width: 1110px;
+    }
+}
+
+// container resize - end
+
+/* helper , base classes */
+
+// text-color
+.text-clr-primary {
+    color: var(--primary);
+}
+
+.text-clr-dark {
+    color: var(--primary-dark);
+}
+
+.text-clr-secondary {
+    color: var(--secondary);
+}
+
+.text-clr-white {
+    color: var(--white);
+}
+
+.text-clr-dark1 {
+    color: var(--dark-1);
+}
+
+.text-clr-dark5 {
+    color: var(--dark-5);
+}
+
+.text-clr-dark6 {
+    color: var(--dark-6);
+}
+
+.text-clr-dark7 {
+    color: var(--dark-7);
+}
+
+// BG color
+.bg-clr-purple {
+    background-color: var(--purple);
+}
+
+.bg-clr-purple-deep {
+    background-color: var(--purple-deep);
+}
+
+.bg-clr-blue-light {
+    background-color: var(--blue-light);
+}
+
+.bg-clr-blue-deep {
+    background-color: var(--blue-deep);
+}
+
+//Font size, weight
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-42 {
+    font-size: 42px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-56 {
+    font-size: 56px;
+}
+
+/*font weight*/
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.lh-normal {
+    line-height: normal !important;
+}
+
+.lh-20 {
+    line-height: 20px !important;
+}
+
+.lh-25 {
+    line-height: 25px !important;
+}
+
+.lh-28 {
+    line-height: 28px !important;
+}
+
+.lh-34 {
+    line-height: 34px !important;
+}
+
+.lh-36 {
+    line-height: 36px !important;
+}
+
+.lh-42 {
+    line-height: 42px !important;
+}
+
+.lh-46 {
+    line-height: 46px !important;
+}
+
+.lh-56 {
+    line-height: 56px !important;
+}
+
+.lh-58 {
+    line-height: 58px !important;
+}
+
+.lh-66 {
+    line-height: 66px !important;
+}
+
+
+
+header {
+    .navbar {
+        padding-inline: 68px;
+        padding-top: 30px;
+        .social-icons {
+            gap: 12px;
+            svg{
+                transition: all 0.3s linear;
+                &:hover {
+                    fill: var(--secondary) !important;
+                    circle {
+                    opacity: 100% !important;
+                    stroke: var(--secondary);
+                    }
+                    path {
+                        fill: black;
+                    }
+                }
+            }
+        }
+        .navbar-brand {
+            margin: 0;
+            padding: 0;
+        }
+        .collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: var(--white);
+                        font-family: 'MADE Tommy Soft';
+                        font-weight: 500;
+                        line-height: 25px;
+                        padding: 0;
+                        padding-right: 47px;
+                    }
+                    .menu-right {
+                        padding-right: 50px !important;
+                    }
+                    .active {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+        .wallet-btn {
+            padding: 11px 28px 12px 28px;
+            border-radius: 8px;
+            background-color: var(--secondary);
+            color: var(--dark-1);
+            font-family: 'MADE Tommy Soft';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
