@@ -288,61 +288,252 @@ button {
     line-height: 66px !important;
 }
 
+.py-18 {
+    padding-block: 18px;
+}
+
+
+// btn
+.primary-btn {
+    padding: 16px 46px 17px 40px;
+    background: var(--secondary);
+    border-radius: 12px;
+    font-family: 'MADE Tommy Soft';
+    color: var(--dark-1);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
 
 
 header {
-    .navbar {
-        padding-inline: 68px;
-        padding-top: 30px;
-        .social-icons {
-            gap: 12px;
-            svg{
-                transition: all 0.3s linear;
-                &:hover {
-                    fill: var(--secondary) !important;
-                    circle {
-                    opacity: 100% !important;
-                    stroke: var(--secondary);
-                    }
-                    path {
-                        fill: black;
-                    }
-                }
-            }
-        }
-        .navbar-brand {
-            margin: 0;
-            padding: 0;
-        }
-        .collapse {
-            .navbar-nav {
-                .nav-item {
-                    .nav-link {
-                        color: var(--white);
-                        font-family: 'MADE Tommy Soft';
-                        font-weight: 500;
-                        line-height: 25px;
-                        padding: 0;
-                        padding-right: 47px;
-                    }
-                    .menu-right {
-                        padding-right: 50px !important;
-                    }
-                    .active {
-                        color: var(--primary);
+    .nav-wrap {
+        position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    width: 100%;
+    z-index: 1000;
+        .navbar {
+            padding-inline: 68px;
+            padding-top: 30px;
+            .social-icons {
+                gap: 12px;
+                svg{
+                    transition: all 0.3s linear;
+                    &:hover {
+                        fill: var(--secondary) !important;
+                        circle {
+                        opacity: 100% !important;
+                        stroke: var(--secondary);
+                        }
+                        path {
+                            fill: black;
+                        }
                     }
                 }
             }
-        }
-        .wallet-btn {
-            padding: 11px 28px 12px 28px;
-            border-radius: 8px;
-            background-color: var(--secondary);
-            color: var(--dark-1);
-            font-family: 'MADE Tommy Soft';
-            font-size: 14px;
-            font-weight: 700;
-            line-height: normal;
+            .navbar-brand {
+                margin: 0;
+                padding: 0;
+            }
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: var(--white);
+                            font-family: 'MADE Tommy Soft';
+                            font-weight: 500;
+                            line-height: 25px;
+                            padding: 0;
+                            padding-right: 47px;
+                        }
+                        .menu-right {
+                            padding-right: 50px !important;
+                        }
+                        .active {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+            .wallet-btn {
+                padding: 11px 28px 12px 28px;
+                border-radius: 8px;
+                background-color: var(--secondary);
+                color: var(--dark-1);
+                font-family: 'MADE Tommy Soft';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: normal;
+            }
         }
     }
 }
+
+// Hero Section start
+.hero-wrapper {
+    position: relative;
+    background-image: url('../img/hero.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-block: 275px 240px;
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/hero-p-tree.png');
+        background-repeat: no-repeat;
+        width: 225px;
+        height: 449px;
+        bottom: -80px;
+        z-index: 2;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../img/hero-p1.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 534px;
+        height: 1177px;
+        top: 161px;
+        z-index: 3;
+    }
+    .content {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url('../img/banner-p.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 189.872px;
+            height: 194.934px;
+            top: -120px;
+            left: -120px;
+        }
+        h2 {
+            opacity: 0.9;
+            padding-bottom: 20px;
+        }
+        h1 {
+            max-width: 650px
+        }
+        h5 {
+            max-width: 540px;
+            opacity: 0.9;
+            padding-block: 25px 50px;
+        }
+    }
+}
+// Hero Section end
+
+// Goal section start
+.goal-wrapper {
+    background-color: #0F1E1C;
+    padding-block: 26px 120px;
+    z-index: 2;
+    .content {
+        position: relative;
+        z-index: 10;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../img/goal-p-leaf.png');
+            background-repeat: no-repeat;
+            height: 454px;
+            width: 384px;
+            right: -125px;
+            top: -60px;
+            z-index: -2;
+        }
+        h3 {
+            opacity: 0.9;
+        }
+        h2 {
+            padding-block: 15px 20px;
+        }
+        p {
+            opacity: 0.9;
+            max-width: 480px;
+        }
+    }
+}
+// Goal section end
+
+// Membership section start
+.membership-wrapper {
+    background-image: url('../img/membership-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-block: 120px;
+    position: relative;
+    z-index: 13;
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../img/membership-p1.png');
+        background-repeat: no-repeat;
+        width: 188px;
+        height: 257px;
+        left: 0;
+        top: 55px;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/membership-p2.png');
+        background-repeat: no-repeat;
+        width: 92px;
+        height: 115px;
+        right: 0;
+        top: 136px;
+    }
+    .content {
+        h3 {
+            opacity: 0.9;
+        }
+        h2 {
+            padding-block: 15px 24px;
+        }
+        p {
+            opacity: 0.9;
+        }
+        h4 {
+            padding-block: 30px 20px;
+        }
+        .py-12 {
+            padding-block: 12px;
+        }
+        .highlights {
+            display: inline-flex;
+            align-items: center;
+            gap: 17px;
+            h5 {
+                opacity: 0.9;
+            }
+        }
+    }
+    .image {
+        position: relative;
+        z-index: 12;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url('../img/membership-image-p.png');
+            background-repeat: no-repeat;
+            height: 279px;
+            width: 267px;
+            bottom: 20px;
+            right: -160px;
+            z-index: -11;
+        }
+    }
+}
+// Membership section end
