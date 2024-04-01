@@ -295,7 +295,7 @@ button {
 
 // btn
 .primary-btn {
-    padding: 16px 46px 17px 40px;
+    padding: 16px 40px 17px 40px;
     background: var(--secondary);
     border-radius: 12px;
     font-family: 'MADE Tommy Soft';
@@ -474,7 +474,7 @@ header {
     background-size: cover;
     padding-block: 120px;
     position: relative;
-    z-index: 13;
+    z-index: -2;
     &::before {
         position: absolute;
         content: '';
@@ -496,6 +496,7 @@ header {
         top: 136px;
     }
     .content {
+        z-index: 5;
         h3 {
             opacity: 0.9;
         }
@@ -519,6 +520,9 @@ header {
                 opacity: 0.9;
             }
         }
+        a {
+            margin-top: 50px;
+        }
     }
     .image {
         position: relative;
@@ -537,3 +541,79 @@ header {
     }
 }
 // Membership section end
+
+// Benefits Section start
+.benefits-wrapper {
+    background-color: #0F1E1C;
+    padding-block: 120px;
+    z-index: 2;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../img/benefits-bg-p.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 524px;
+        height: 1177px;
+        top: -405px;
+        // opacity: 0.1;
+        z-index: 3;
+    }
+
+    .image {
+        position: relative;
+        z-index: 3;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../img/benefits-p.png);
+            background-repeat: no-repeat;
+            height: 264px;
+            width: 268px;
+            top: -24px;
+            left: -180px;
+            z-index: -1;
+        }
+    }
+    .content {
+        h3 {
+            opacity: 0.9;
+        }
+        h2 {
+            padding-block: 15px 20px;
+        }
+        p {
+            opacity: 0.9;
+            max-width: 480px;
+        }
+        .py-15 {
+            padding-block: 15px;
+        }
+    }
+}
+// Benefits Section end
+
+// Planning Section Start
+.planning-wrapper {
+    background-color: #0E2826;
+    padding-block: 120px;
+    h3 {
+        opacity: 0.9;
+    }
+    h2 {
+        padding-block: 15px 60px;
+    }
+    .content {
+        .highlights {
+            display: inline-flex;
+            align-items: center;
+            gap: 17px;
+            h5 {
+                opacity: 0.9;
+            }
+        }
+    }
+
+}
+// Planning Section end

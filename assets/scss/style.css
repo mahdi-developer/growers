@@ -266,7 +266,7 @@ button {
 }
 
 .primary-btn {
-  padding: 16px 46px 17px 40px;
+  padding: 16px 40px 17px 40px;
   background: var(--secondary);
   border-radius: 12px;
   font-family: "MADE Tommy Soft";
@@ -430,7 +430,7 @@ header .nav-wrap .navbar .wallet-btn {
   background-size: cover;
   padding-block: 120px;
   position: relative;
-  z-index: 13;
+  z-index: -2;
 }
 .membership-wrapper::before {
   position: absolute;
@@ -451,6 +451,9 @@ header .nav-wrap .navbar .wallet-btn {
   height: 115px;
   right: 0;
   top: 136px;
+}
+.membership-wrapper .content {
+  z-index: 5;
 }
 .membership-wrapper .content h3 {
   opacity: 0.9;
@@ -475,6 +478,9 @@ header .nav-wrap .navbar .wallet-btn {
 .membership-wrapper .content .highlights h5 {
   opacity: 0.9;
 }
+.membership-wrapper .content a {
+  margin-top: 50px;
+}
 .membership-wrapper .image {
   position: relative;
   z-index: 12;
@@ -489,4 +495,69 @@ header .nav-wrap .navbar .wallet-btn {
   bottom: 20px;
   right: -160px;
   z-index: -11;
+}
+
+.benefits-wrapper {
+  background-color: #0F1E1C;
+  padding-block: 120px;
+  z-index: 2;
+  position: relative;
+}
+.benefits-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/benefits-bg-p.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 524px;
+  height: 1177px;
+  top: -405px;
+  z-index: 3;
+}
+.benefits-wrapper .image {
+  position: relative;
+  z-index: 3;
+}
+.benefits-wrapper .image::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/benefits-p.png);
+  background-repeat: no-repeat;
+  height: 264px;
+  width: 268px;
+  top: -24px;
+  left: -180px;
+  z-index: -1;
+}
+.benefits-wrapper .content h3 {
+  opacity: 0.9;
+}
+.benefits-wrapper .content h2 {
+  padding-block: 15px 20px;
+}
+.benefits-wrapper .content p {
+  opacity: 0.9;
+  max-width: 480px;
+}
+.benefits-wrapper .content .py-15 {
+  padding-block: 15px;
+}
+
+.planning-wrapper {
+  background-color: #0E2826;
+  padding-block: 120px;
+}
+.planning-wrapper h3 {
+  opacity: 0.9;
+}
+.planning-wrapper h2 {
+  padding-block: 15px 60px;
+}
+.planning-wrapper .content .highlights {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+}
+.planning-wrapper .content .highlights h5 {
+  opacity: 0.9;
 }/*# sourceMappingURL=style.css.map */
